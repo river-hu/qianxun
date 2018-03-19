@@ -1,0 +1,67 @@
+nav li:nth-child(7) {
+    background-color: #eee;
+    border-bottom:2px solid red;
+}
+.fuwu h1{
+    margin-top: 50px;
+font-size: 30px;
+padding-bottom: 24px;
+border-bottom: 2px dashed rgb(207, 206, 206)
+}
+.fuwu p{
+    padding: 10px 50px 30px;
+}
+.advantage{
+    width: 100%;
+}
+.advantage>img{
+    width: 80%;
+    display: block;
+    margin: 20px auto 30px;
+}
+#partner_p{
+    background: #fff;
+}
+.partner{
+    font-size: 0;
+    text-align: center;
+}
+.partner img{
+    width: 258px;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid #eaeaea;
+}
+#map{
+    margin: 0 auto;
+    height: 500px;
+}
+.amap-adcombo-close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: url(../image/关闭.png) center center no-repeat;
+    width: 18px;
+    height: 18px;
+    text-indent: -9999em;
+}
+.tel img,.tel div{
+ display: inline-block;
+
+}
+.
+tel_img{
+    width: 100px;
+    height: 100px;
+}
+.tel>div{
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+#xian{
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+}

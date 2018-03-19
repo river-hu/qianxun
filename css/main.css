@@ -1,0 +1,34 @@
+nav li:nth-child(1) {
+background-color: #eee;
+border-bottom:2px solid red;
+}
+
+
+.intemet{
+    margin-top: 40px;
+}
+.intemet .head{
+    margin-top: 40px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.intemet .head .list{
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+    background-color: #ccc;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 10px;
+}
+/* .intemet .head .list:hover{
+    background-color: #f57c07;
+    color: #fff;
+}
+.intemet .head  .active{
+    background-color: #f57c07;
+    color: #fff;
+} */
