@@ -232,24 +232,27 @@ nav li a:hover{
     color: rgb(113, 113, 112)
 }
 .infowindow-content{
-    height: 55px;
+    height: 65px;
 }
 .amap-info-header{
-    height: 30px;
+    height: 40px;
     font-size: 16px;
     color: #333;
     text-align: center;
-    line-height: 30px;
+   
     font-weight: bold;
+    padding: 10px;
 }
 .amap-info-body{
     border-top: 1px solid #d9d9d9;
     height: 25px;
     color: #333;
     font-size: 12px;
-    line-height:25px;
-    padding-left: 5px;
+    line-height:20px;
+    padding: 5px;
     box-sizing: border-box;
+    text-align: center;
+    
 }
 .con9 .t222 img{
     width: 90%;
@@ -445,3 +448,8 @@ nav li a:hover{
         padding: 5px 0;
     }
 }
+.intemet .head .active,.active{
+    background-color: #f57c07;
+    color: #fff;
+}
+
