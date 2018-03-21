@@ -17,84 +17,20 @@
 </head>
 
 <body>
-    <div class="index_top hidden-xs">
-        <div class="container">
-            <p class="pull-left">你好，欢迎来到千寻网络！咨询热线：
-                <span style="color: #f5b303;font-size: 18px;">18703995755</span>
-            </p>
-            <p class="pull-right">
-                <a href="#">网站建设</a>&#x3000;|&#x3000;
-                <a href="#">APP开发</a>&#x3000;|&#x3000;
-                <a href="#">微商城搭建</a>&#x3000;|&#x3000;
-                <a href="#">软件定制开发</a>
-            </p>
-        </div>
-    </div>
+  
     <nav>
-        <div class="container hidden-xs">
-            <a href="./index.html">
-                <img src="./image/logo.png" alt="千寻网络公司" class="pull-left" title="千寻网络">
-            </a>
-
-            <ul>
-                <li>
-                    <a href="#">首页</a>
-                </li>
-                <li>
-                    <a href="./template/jianshe.html">网站建设部</a>
-                </li>
-                <li>
-                    <a href="./template/ruanjian.html">软件开发事业部</a>
-                </li>
-                <li>
-                    <a href="./template/pinpai.html">品牌包装设计部</a>
-                </li>
-                <li>
-                    <a href="./template/tuiguang.html">网络推广部</a>
-                </li>
-                <li>
-                    <a href="./template/anli.html">成功案例</a>
-                </li>
-                <li>
-                    <a href="./template/about.html">关于千寻</a>
-                </li>
-            </ul>
-        </div>
         <div class="visible-xs">
             <div class="nav">
                 <p>
                     <a href="./index.html">
                         <img class="pull-left" src="./image/f_logo.png" alt="logo">
                     </a>
-                    <span class="pull-right">☰</span>
                 </p>
-                <ul>
-                    <li>
-                        <a href="./index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="./template/jianshe.html">网站建设部</a>
-                    </li>
-                    <li>
-                        <a href="./template/ruanjian.html">软件开发事业部</a>
-                    </li>
-                    <li>
-                        <a href="./template/pinpai.html">品牌包装设计部</a>
-                    </li>
-                    <li>
-                        <a href="./template/tuiguang.html">网络推广部</a>
-                    </li>
-                    <li>
-                        <a href="./template/anli.html">成功案例</a>
-                    </li>
-                    <li>
-                        <a href="./template/about.html">关于千寻</a>
-                    </li>
-                </ul>
+
             </div>
         </div>
     </nav>
-    <div class="app">
+   
     <div class="banner text-center">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -127,6 +63,34 @@
 
     </div>
     <!--2-->
+    <div class="app" @click="over">
+        <!-- 菜单导航 -->
+            <div  class="t_nav" :class="{show:navshow}">
+                <span  @click.stop="show">☰</span>
+                <ul >
+                    <li>
+                        <a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                    </li>
+                    <li>
+                        <a @click.stop="" href="./template/jianshe.html">网&nbsp;&nbsp;站&nbsp;&nbsp;建&nbsp;&nbsp;设&nbsp;&nbsp;部</a>
+                    </li>
+                    <li>
+                        <a href="./template/ruanjian.html">软件开发事业部</a>
+                    </li>
+                    <li>
+                        <a href="./template/pinpai.html">品牌包装设计部</a>
+                    </li>
+                    <li>
+                        <a href="./template/tuiguang.html">网&nbsp;&nbsp;络&nbsp;&nbsp;推&nbsp;&nbsp;广&nbsp;&nbsp;部</a>
+                    </li>
+                    <li>
+                        <a href="./template/anli.html">成&nbsp;&nbsp;&nbsp;&nbsp;功&nbsp;&nbsp;&nbsp;&nbsp;案&nbsp;&nbsp;&nbsp;&nbsp;例</a>
+                    </li>
+                    <li>
+                        <a href="./template/about.html">关&nbsp;&nbsp;&nbsp;&nbsp;于&nbsp;&nbsp;&nbsp;&nbsp;千&nbsp;&nbsp;&nbsp;&nbsp;寻</a>
+                    </li>
+                </ul>
+            </div>
     <div class="container text-center con2">
         <div style="margin-bottom: 4vw;">
             <h1 style="color: #f57c07">我们的服务</h1>
@@ -364,17 +328,7 @@
             <h1 style="color: #f5b303">看咨询、精诚咨询</h1>
             <h3>网站建设、软件开发、包装设计、网络推广为您提供一站式高品质服务</h3>
         </div>
-        <div class="row con3_2" style="padding: 0 20%">
-            <div class="col-sm-4 col-xs-12">
-                <p>网站建设案例</p>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <p>品牌Logo设计</p>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <p>品牌Logo设计</p>
-            </div>
-        </div>
+       
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="col-xs-3">

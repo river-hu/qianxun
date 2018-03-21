@@ -1,0 +1,51 @@
+nav li:nth-child(5) {
+    background-color: #eee;
+    border-bottom:2px solid red;
+}
+.intemet{
+    margin-top: 40px;
+}
+.intemet .row{
+    margin-top: 40px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.intemet .row .list{
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+    background-color: #e1e1e1;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 10px;
+}
+/* .intemet .row .list:hover{
+    background-color: #f57c07;
+    color: #fff;
+}
+.intemet .row  .active{
+    background-color: #f57c07;
+    color: #fff;
+} */
+.tel img,.tel div{
+    display: inline-block;
+   
+   }
+   tel_img{
+       width: 100px;
+       height: 100px;
+   }
+   .tel>div{
+       font-size: 30px;
+       line-height: 50px;
+       margin-left: 10px;
+       vertical-align: middle;
+   }
+   #xian{
+       display: block;
+       font-size: 20px;
+       line-height: 20px;
+   }
