@@ -1,31 +1,28 @@
+nav li:nth-child(4) {
+    background-color: #eee;
+    border-bottom: 2px solid red;
+}
 
-        nav li:nth-child(4) {
-            background-color: #eee;
-            border-bottom:2px solid red;
-        }
-        .tel img,.tel div{
-         display: inline-block;
-        
-        }
-        .
-        tel_img{
-            width: 100px;
-            height: 100px;
-        }
-        .tel>div{
-            font-size: 30px;
-            line-height: 50px;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-        #xian{
-            display: block;
-            font-size: 20px;
-            line-height: 20px;
-        }
-        .con3 {
-            padding-top: 2vw;
-            color: #666;
-            width: 100%;
-            background-color: #fff;
-        }
+.tel img, .tel div {
+    display: inline-block;
+}
+
+.tel>div {
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#xian {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.con3 {
+    padding-top: 2vw;
+    color: #666;
+    width: 100%;
+    background-color: #fff;
+}

@@ -1,16 +1,18 @@
 nav li:nth-child(6) {
     background-color: #eee;
-    border-bottom:2px solid red;
+    border-bottom: 2px solid red;
 }
-.intemet .row{
+
+.intemet .row {
     margin-top: 40px;
-    display: -webkit-flex; /* Safari */
+    display: -webkit-flex;
+    /* Safari */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
-.intemet .row .list{
+
+.intemet .row .list {
     border-radius: 8px;
     padding: 10px;
     width: 150px;
@@ -19,55 +21,55 @@ nav li:nth-child(6) {
     box-sizing: border-box;
     margin: 10px;
 }
-/* .intemet .row .list:hover{
-    background-color: #f57c07;
-    color: #fff;
-}
-.intemet .row  .active{
-    background-color: #f57c07;
-    color: #fff;
-} */
-.tel img,.tel div{
+
+
+.tel img, .tel div {
     display: inline-block;
-   
-   }
-   tel_img{
-       width: 100px;
-       height: 100px;
-   }
-   .tel>div{
-       font-size: 30px;
-       line-height: 50px;
-       margin-left: 10px;
-       vertical-align: middle;
-   }
-   #xian{
-       display: block;
-       font-size: 20px;
-       line-height: 20px;
-   }
-   .intemet{
+}
+
+tel_img {
+    width: 100px;
+    height: 100px;
+}
+
+.tel>div {
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#xian {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.intemet {
     margin-top: 40px;
 }
-.anli{
+
+.anli {
     margin-top: 40px;
-     display: -webkit-flex; /* Safari */
+    display: -webkit-flex;
+    /* Safari */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.anli .list{
+
+.anli .list {
     width: 300px;
     height: 250px;
     overflow: hidden;
-    line-height:50px ;
+    line-height: 50px;
     position: relative;
     flex-grow: 1;
     box-sizing: border-box;
     margin: 10px;
-
 }
-.anli p{
+
+.anli p {
     position: absolute;
     z-index: 10;
     bottom: -1px;
@@ -79,6 +81,7 @@ nav li:nth-child(6) {
     font-size: 16px;
     margin: 0;
 }
-.anli .list img{
+
+.anli .list img {
     width: 100%;
 }

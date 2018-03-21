@@ -2,66 +2,79 @@ nav li:nth-child(2) {
     background-color: #eee;
     border-bottom: 2px solid red;
 }
-h1{
+
+h1 {
     margin-top: 0;
 }
-.con2{
+
+.con2 {
     color: #ffffff;
 }
-.con3{
+
+.con3 {
     margin-top: 50px;
     background-color: #eeeeee;
 }
-.con3 div{
+
+.con3 div {
     padding: 0;
     margin-bottom: 10px;
 }
 
-.con2 .con3_2  p{
+.con2 .con3_2 p {
     color: #000;
     background-color: #bbb;
     padding: 10px 0;
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* .con2 .con3_2 p:hover ,.con2 .con3_2 .active{
     background-color: #f57c07;
     color: #fff;
 } */
 
-.site .text{
+.site .text {
     padding-top: 10px;
 }
 
-.site .row{
-    transition: all 1s ;
+.site .row {
+    transition: all 1s;
     transform: translateY(0px);
 }
+
 .con2 img {
     margin-bottom: 0;
 }
-.fuwu h1:nth-child(1){
+
+.fuwu h1:nth-child(1) {
     padding-top: 10px;
     color: rgb(244, 124, 7)
 }
-.fuwu h1:nth-child(2){
+
+.fuwu h1:nth-child(2) {
     color: rgb(163, 163, 163);
     font-size: 22px;
 }
-.fuwu p{
+
+.fuwu p {
     font-size: 20px;
     color: rgb(113, 113, 112);
 }
-.liuc{
+
+.liuc {
     margin-top: 57px;
     margin-bottom: 65px;
 }
-.fuwu .bot{
+
+.fuwu .bot {
     margin-bottom: 70px;
 }
-.he_content{
+
+.he_content {
     padding-bottom: 60px;
 }
-.he_content>div{
+
+.he_content>div {
     padding: 0;
 }

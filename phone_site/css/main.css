@@ -1,21 +1,22 @@
 nav li:nth-child(1) {
-background-color: #eee;
-border-bottom:2px solid red;
+    background-color: #eee;
+    border-bottom: 2px solid red;
 }
 
-
-.intemet{
+.intemet {
     margin-top: 40px;
 }
-.intemet .head{
+
+.intemet .head {
     margin-top: 40px;
-    display: -webkit-flex; /* Safari */
+    display: -webkit-flex;
+    /* Safari */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
-.intemet .head .list{
+
+.intemet .head .list {
     border-radius: 8px;
     padding: 10px;
     width: 150px;
@@ -25,11 +26,3 @@ border-bottom:2px solid red;
     margin: 10px;
     transition: all .3s ease-in-out;
 }
-/* .intemet .head .list:hover{
-    background-color: #f57c07;
-    color: #fff;
-}
-.intemet .head  .active{
-    background-color: #f57c07;
-    color: #fff;
-} */

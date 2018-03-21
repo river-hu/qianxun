@@ -1,20 +1,23 @@
 nav li:nth-child(3) {
     background-color: #eee;
-    border-bottom:2px solid red;
+    border-bottom: 2px solid red;
 }
+
 #s0 .swiper-container {
     width: 100%;
     height: 400px;
 }
+
 #s1 .swiper-container {
     width: 100%;
     height: 400px;
 }
 
-.nav_ruan{
+.nav_ruan {
     padding: 0;
 }
-.nav_ruan>div{
+
+.nav_ruan>div {
     margin: 0 auto;
     width: 80%;
     border: 1px solid #eee;
@@ -23,46 +26,49 @@ nav li:nth-child(3) {
     background: #efefef;
     border-radius: 5px;
 }
-.vsclass{
+
+.vsclass {
     font-size: 76px;
     font-style: italic;
     margin-left: -10px;
     margin-right: 10px;
 }
-/* .nav_ruan>div:hover{
-    background:  rgb(244, 124, 7);
-    color: #fff;
-} */
-.weixin img{
+
+.weixin img {
     width: 70%;
     border-radius: 50%;
 }
-.weixin p{
+
+.weixin p {
     margin-top: 10px;
     font-size: 18px;
     color: #666;
 }
-.shiye{
+
+.shiye {
     padding-bottom: 40px;
 }
-.dec{
+
+.dec {
     padding-top: 50px;
 }
 
-.dec .title_c{
+.dec .title_c {
     margin-bottom: 50px;
 }
-.tel img,.tel div{
- display: inline-block;
 
+.tel img, .tel div {
+    display: inline-block;
 }
-.tel>div{
+
+.tel>div {
     font-size: 30px;
     line-height: 50px;
     margin-left: 10px;
     vertical-align: middle;
 }
-#xian{
+
+#xian {
     display: block;
     font-size: 20px;
     line-height: 20px;
