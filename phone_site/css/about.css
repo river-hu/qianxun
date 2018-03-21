@@ -17,6 +17,13 @@ border-bottom: 2px dashed rgb(207, 206, 206)
 .advantage{
     width: 100%;
 }
+.tel {
+    width:90%;
+    margin: 30px auto 100px;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 10px;
+}
 .advantage>img{
     width: 80%;
     display: block;

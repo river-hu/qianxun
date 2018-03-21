@@ -13,82 +13,18 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../js/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="../css/tuiguang.css">
+    <script src="../js/vue.js"></script>
 </head>
 
 <body>
-    <div class="index_top hidden-xs">
-        <div class="container">
-            <p class="pull-left">你好，欢迎来到千寻网络！咨询热线：
-                <span style="color: #f5b303;font-size: 18px;">18703995755</span>
-            </p>
-            <p class="pull-right">
-                <a href="#">网站建设</a>&#x3000;|&#x3000;
-                <a href="#">APP开发</a>&#x3000;|&#x3000;
-                <a href="#">微商城搭建</a>&#x3000;|&#x3000;
-                <a href="#">软件定制开发</a>
-            </p>
-        </div>
-    </div>
     <nav>
-        <div class="container hidden-xs">
-            <a href="../index.html">
-                <img src="../image/logo.png" alt="千寻网络公司" class="pull-left" title="千寻网络">
-            </a>
-            <ul>
-                <li>
-                    <a href="../index.html">首页</a>
-                </li>
-                <li>
-                    <a href="./jianshe.html">网站建设部</a>
-                </li>
-                <li>
-                    <a href="./ruanjian.html">软件开发事业部</a>
-                </li>
-                <li>
-                    <a href="./pinpai.html">品牌包装设计部</a>
-                </li>
-                <li>
-                    <a href="./tuiguang.html">网络推广部</a>
-                </li>
-                <li>
-                    <a href="./anli.html">成功案例</a>
-                </li>
-                <li>
-                    <a href="./about.html">关于千寻</a>
-                </li>
-            </ul>
-        </div>
         <div class="visible-xs">
             <div class="nav">
                 <p>
                     <a href="../index.html">
                         <img class="pull-left" src="../image/f_logo.png" alt="logo">
                     </a>
-                    <span class="pull-right">☰</span>
                 </p>
-                <ul>
-                    <li>
-                        <a href="../index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="./jianshe.html">网站建设部</a>
-                    </li>
-                    <li>
-                        <a href="./ruanjian.html">软件开发事业部</a>
-                    </li>
-                    <li>
-                        <a href="./pinpai.html">品牌包装设计部</a>
-                    </li>
-                    <li>
-                        <a href="./tuiguang.html">网络推广部</a>
-                    </li>
-                    <li>
-                        <a href="./anli.html">成功案例</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">关于千寻</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </nav>
@@ -114,13 +50,39 @@
         </div>
 
     </div>
-
+    <div class="app" @click="over">
+            <div class="t_nav" :class="{show:navshow}">
+                <span @click.stop="show">☰</span>
+                <ul>
+                    <li>
+                        <a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                    </li>
+                    <li>
+                        <a @click.stop="" href="./jianshe.html">网&nbsp;&nbsp;站&nbsp;&nbsp;建&nbsp;&nbsp;设&nbsp;&nbsp;部</a>
+                    </li>
+                    <li>
+                        <a href="./ruanjian.html">软件开发事业部</a>
+                    </li>
+                    <li>
+                        <a href="./pinpai.html">品牌包装设计部</a>
+                    </li>
+                    <li>
+                        <a href="./tuiguang.html">网&nbsp;&nbsp;络&nbsp;&nbsp;推&nbsp;&nbsp;广&nbsp;&nbsp;部</a>
+                    </li>
+                    <li>
+                        <a href="./anli.html">成&nbsp;&nbsp;&nbsp;&nbsp;功&nbsp;&nbsp;&nbsp;&nbsp;案&nbsp;&nbsp;&nbsp;&nbsp;例</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">关&nbsp;&nbsp;&nbsp;&nbsp;于&nbsp;&nbsp;&nbsp;&nbsp;千&nbsp;&nbsp;&nbsp;&nbsp;寻</a>
+                    </li>
+                </ul>
+            </div>
     <div class="container text-center intemet">
         <h1 class="title_e">INTEMET SPREAD</h1>
         <h1 class="title_q">千寻网络之网络推广部</h1>
         <p class="title_c">我们只看结果</p>
         <div class="row">
-            <div class="list active">网站程序维护</div>
+            <div class="list">网站程序维护</div>
             <div class="list">网站内容维护</div>
             <div class="list">客户端维护&nbsp;</div>
             <div class="list">网络推广&nbsp;&nbsp;</div>
@@ -184,22 +146,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-    <!--8-->
-    <div class="container-fluid text-center con8 hidden-xs">
-        <p>
-            <a href="../index.html">&#x3000;首页&#x3000;</a>&#x3000;|&#x3000;
-            <a href="./jianshe.html">网站建设</a>&#x3000;|&#x3000;
-            <a href="./anli.html">经典案例</a>&#x3000;|&#x3000;
-            <a href="./ruanjian.html">软件开发</a>&#x3000;|&#x3000;
-            <a href="./pinpai.html">品牌包装</a>&#x3000;|&#x3000;
-            <a href="./tuiguang.html">网络推广</a>&#x3000;|&#x3000;
-            <a href="./about.html">关于我们</a>
-        </p>
-    </div>
     <!--9-->
     <div class="con9 foot1" style="width: 100%;background-color: #1b1b1b;color: #999;padding: 40px 0 60px;">
         <div class="container">
@@ -232,12 +178,14 @@
             <a href="../index.html">河南千寻网络科技有限公司©</a> 版权所有 豫ICP备16000000000
         </div>
     </div>
+</div>
 </body>
 
 </html>
 <script src="../js/jquery-3.1.0.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/swiper-3.4.2.jquery.min.js"></script>
+<script src="./js/tuiguang.js"></script>
 <script>
     $('.nav p').click(function () {
         $('.nav ul').stop().slideToggle(400)

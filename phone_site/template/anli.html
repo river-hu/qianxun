@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../js/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="../css/anli.css">
+    <script src="../js/vue.js"></script>
 </head>
 
 <body>
@@ -49,111 +50,113 @@
         </div>
 
     </div>
-    <div class="container text-center intemet">
-        <h1 class="title_q">案例展示</h1>
-        <p class="title_c">我们专注于为企业提供高端互联网解决方案</p>
-        <div class="row">
-            <div class="list active">&nbsp;商城案例&nbsp;</div>
-            <div class="list">微商城案例</div>
-            <div class="list">&nbsp;软件开发&nbsp;</div>
-            <div class="list">&nbsp;APP案例&nbsp;</div>
-        </div>
-        <div class="anli">
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container text-center">
-        <h1 class="title_q">联系我们</h1>
-        <div class="tel">
-            <img class="tel_img" src="../image/tel.png" alt="" width="80" height="80">
-            <div>18703995755
-                <div id="xian">服务热线</div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!--8-->
-    <div class="container-fluid text-center con8 hidden-xs">
-        <p>
-            <a href="../index.html">&#x3000;首页&#x3000;</a>&#x3000;|&#x3000;
-            <a href="./jianshe.html">网站建设</a>&#x3000;|&#x3000;
-            <a href="./anli.html">经典案例</a>&#x3000;|&#x3000;
-            <a href="./ruanjian.html">软件开发</a>&#x3000;|&#x3000;
-            <a href="./pinpai.html">品牌包装</a>&#x3000;|&#x3000;
-            <a href="./tuiguang.html">网络推广</a>&#x3000;|&#x3000;
-            <a href="./about.html">关于我们</a>
-        </p>
-    </div>
-    <!--9-->
-    <div class="con9 foot1" style="width: 100%;background-color: #1b1b1b;color: #999;padding: 40px 0 60px;">
-        <div class="container">
-            <div class="row t222">
-                <div class="col-sm-4 hidden-xs">
-                    <img src="../image/f_logo.png" alt="logo" style="margin-bottom: 1vw;">
-                    <p>网站建设</p>
-                    <p>APP开发</p>
-                    <p>微商城搭建</p>
-                    <p>软件定制开发</p>
+    <div class="app" @click="over">
+            <div  class="t_nav" :class="{show:navshow}">
+                    <span  @click.stop="show">☰</span>
+                    <ul  >
+                        <li>
+                            <a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                        </li>
+                        <li>
+                            <a @click.stop="" href="./jianshe.html">网&nbsp;&nbsp;站&nbsp;&nbsp;建&nbsp;&nbsp;设&nbsp;&nbsp;部</a>
+                        </li>
+                        <li>
+                            <a href="./ruanjian.html">软件开发事业部</a>
+                        </li>
+                        <li>
+                            <a href="./pinpai.html">品牌包装设计部</a>
+                        </li>
+                        <li>
+                            <a href="./tuiguang.html">网&nbsp;&nbsp;络&nbsp;&nbsp;推&nbsp;&nbsp;广&nbsp;&nbsp;部</a>
+                        </li>
+                        <li>
+                            <a href="./anli.html">成&nbsp;&nbsp;&nbsp;&nbsp;功&nbsp;&nbsp;&nbsp;&nbsp;案&nbsp;&nbsp;&nbsp;&nbsp;例</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">关&nbsp;&nbsp;&nbsp;&nbsp;于&nbsp;&nbsp;&nbsp;&nbsp;千&nbsp;&nbsp;&nbsp;&nbsp;寻</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-4 col-xs-6">
-                    <img src="../image/f_x.png" alt="logo" style="margin-bottom: 1vw;">
-                    <p>电话：0371-53631917</p>
-                    <p>传真：0371-53631917</p>
-                    <p>上班时间：星期一至星期五</p>
-                    <p>公司地址：
-                        <a href="./about.html#map">河南省郑州市农业路政七街省汇中心B座7楼</a>
-                    </p>
+        <div class="container text-center intemet">
+            <h1 class="title_q">案例展示</h1>
+            <p class="title_c">我们专注于为企业提供高端互联网解决方案</p>
+            <div class="anli">
+                <div class="list">
+                    <img src="../image/网站建设.png" alt="">
+                    <p>网站案例展示</p>
                 </div>
-                <div class="col-sm-4 col-xs-6">
-                    <img class="t3" src="../image/222.jpg" alt="img" style="margin-bottom: 3vw;">
-                    <p>互联网企业领导者</p>
+                <div class="list">
+                    <img src="../image/网站建设.png" alt="">
+                    <p>网站案例展示</p>
                 </div>
+                <div class="list">
+                    <img src="../image/网站建设.png" alt="">
+                    <p>网站案例展示</p>
+                </div>
+                <div class="list">
+                    <img src="../image/网站建设.png" alt="">
+                    <p>网站案例展示</p>
+                </div>
+
             </div>
         </div>
-    </div>
-    <div class="con9 foot2">
+
         <div class="container text-center">
-            <a href="../index.html">河南千寻网络科技有限公司©</a> 版权所有 豫ICP备16000000000
+            <h1 class="title_q">联系我们</h1>
+            <div class="tel">
+                <img class="tel_img" src="../image/tel.png" alt="" width="80" height="80">
+                <div>18703995755
+                    <div id="xian">服务热线</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--8-->
+        <div class="container-fluid text-center con8 hidden-xs">
+            <p>
+                <a href="../index.html">&#x3000;首页&#x3000;</a>&#x3000;|&#x3000;
+                <a href="./jianshe.html">网站建设</a>&#x3000;|&#x3000;
+                <a href="./anli.html">经典案例</a>&#x3000;|&#x3000;
+                <a href="./ruanjian.html">软件开发</a>&#x3000;|&#x3000;
+                <a href="./pinpai.html">品牌包装</a>&#x3000;|&#x3000;
+                <a href="./tuiguang.html">网络推广</a>&#x3000;|&#x3000;
+                <a href="./about.html">关于我们</a>
+            </p>
+        </div>
+        <!--9-->
+        <div class="con9 foot1" style="width: 100%;background-color: #1b1b1b;color: #999;padding: 40px 0 60px;">
+            <div class="container">
+                <div class="row t222">
+                    <div class="col-sm-4 hidden-xs">
+                        <img src="../image/f_logo.png" alt="logo" style="margin-bottom: 1vw;">
+                        <p>网站建设</p>
+                        <p>APP开发</p>
+                        <p>微商城搭建</p>
+                        <p>软件定制开发</p>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <img src="../image/f_x.png" alt="logo" style="margin-bottom: 1vw;">
+                        <p>电话：0371-53631917</p>
+                        <p>传真：0371-53631917</p>
+                        <p>上班时间：星期一至星期五</p>
+                        <p>公司地址：
+                            <a href="./about.html#map">河南省郑州市农业路政七街省汇中心B座7楼</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="t3" src="../image/222.jpg" alt="img" style="margin-bottom: 3vw;">
+                        <p>互联网企业领导者</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="con9 foot2">
+            <div class="container text-center">
+                <a href="../index.html">河南千寻网络科技有限公司©</a> 版权所有 豫ICP备16000000000
+            </div>
         </div>
     </div>
 
@@ -171,6 +174,7 @@
 <script src="../js/jquery-3.1.0.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/swiper-3.4.2.jquery.min.js"></script>
+<script src="./js/anli.js"></script>
 <script>
     $('.nav p').click(function () {
         $('.nav ul').stop().slideToggle(400)
