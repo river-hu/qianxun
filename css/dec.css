@@ -1,0 +1,36 @@
+body{
+    background: #efeef4;
+}
+.body{
+    width: 100%;
+    max-width: 1000px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 20px 50px;
+}
+.title{
+    text-align: center;
+}
+.text{
+    font-size: 16px;
+    color: #000;
+    text-indent: 2em;
+    line-height: 28px;
+    margin: 28px 0;
+}
+.p_img{
+    width: 90%;
+    margin: 15px auto 15px;
+
+}
+.p_img img {
+    width: 100%;
+}
+.fr {
+   text-align: right;
+}
+.fr p {
+    color: #989898;
+    font-size: 16px;
+    line-height: 20px;
+}
