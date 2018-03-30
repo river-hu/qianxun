@@ -252,4 +252,12 @@
         autoplay: 5000,
         loop: true
     });
+    $.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=5",function(result){
+    console.log(result.data);
+    var html = "";
+    result.data.forEach(function(item){
+        html+="<div class=\"swiper-slide\" style=\"background-image:url("+item.image+")\"></div>";
+    });
+    $(".swiper-wrapper").html(html);
+})
 </script>

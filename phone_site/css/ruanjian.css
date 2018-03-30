@@ -73,3 +73,10 @@ nav li:nth-child(3) {
     font-size: 20px;
     line-height: 20px;
 }
+.ping p{
+    box-sizing: border-box;
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden;
+    padding: 20px;  
+}

@@ -21,7 +21,14 @@ nav li:nth-child(6) {
     box-sizing: border-box;
     margin: 10px;
 }
-
+.intemet .row .list:hover{
+    background-color: #f57c07;
+    color: #fff;
+}
+.intemet .row  .active{
+    background-color: #f57c07;
+    color: #fff;
+}
 
 .tel img, .tel div {
     display: inline-block;

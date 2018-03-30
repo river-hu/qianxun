@@ -198,18 +198,8 @@
         <div style="width: 100%;padding: 0 50px;position: relative;" id="s1">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(../image/1.png)">
-                        <h1>123456</h1>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(../image/1.png)">
-                        <h1>123456</h1>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(../image/1.png)">
-                        <h1>123456</h1>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(../image/1.png)">
-                        <h1>123456</h1>
-                    </div>
+                    
+                    
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination swiper-pagination-white"></div>
@@ -283,48 +273,4 @@
 <script src="../js/jquery-3.1.0.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/swiper-3.4.2.jquery.min.js"></script>
-<script>
-    $('.nav p').click(function () {
-        $('.nav ul').stop().slideToggle(400)
-    })
-    var swiper = new Swiper('#s0 .swiper-container', {
-        pagination: '#s0 .swiper-pagination',
-        nextButton: '#s0 .swiper-button-next',
-        prevButton: '#s0 .swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        autoplay: 5000,
-        loop: true
-    });
-
-    window.onresize = function () {
-        aa($('body').css('width').replace('px', ''))
-    }
-
-    function aa(v) {
-        const s = v || $('body').css('width').replace('px', '');
-        if (s > 768) {
-            var swiper1 = new Swiper('#s1 .swiper-container', {
-                pagination: '#s1 .swiper-pagination',
-                nextButton: '#s1 .xia',
-                prevButton: '#s1 .shang',
-                slidesPerView: 2,
-                paginationClickable: true,
-                spaceBetween: 30,
-                loop: true,
-            });
-        } else {
-            var swiper1 = new Swiper('#s1 .swiper-container', {
-                pagination: '#s1 .swiper-pagination',
-                nextButton: '#s1 .xia',
-                prevButton: '#s1 .shang',
-                slidesPerView: 1,
-                paginationClickable: true,
-                spaceBetween: 30,
-                loop: true,
-            });
-        }
-    }
-    aa();
-</script>
+<script src="../js/ruanjian.js"></script>

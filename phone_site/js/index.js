@@ -1,14 +1,33 @@
 var vm = new Vue({
     el:'.app',
     data:{
-        arr_case:[
-            {name:"网站建设案例"},
-            {name:"品牌Logo设计"},
-            {name:"微信商城开发"},
-            {name:"网络推广案例"}
+        title: [
+            {
+                name: " 商城案例 "
+            },
+            {
+                name: "微商城案例"
+            },
+            {
+                name: " 软件开发 "
+            },
+            {
+                name: " APP案例 "
+            },
         ],
-        case_index:0,
-        navshow:false
+        pageindex: 1,
+        arr:[],
+        navshow:false,
+        cooperation:[]
+    },
+    watch:{
+        pageindex:function(){
+            var url = "http://192.168.1.107:81/qianxun/?s=index/example/queryAllByPage&typeid="+this.pageindex+"&page=1&count=8"
+            $.get(url,function(reslut){
+                console.log(reslut);
+                vm.arr = reslut.data.data;
+            })
+        }
     },
     methods:{
         case_toggle:function(index){
@@ -22,12 +41,21 @@ var vm = new Vue({
         },
         over:function(){
             this.navshow=false;
+        },
+        toggle:function(index){
+            this.pageindex = index+1;
         }
     },  
     mounted:function(){
     },
     created:function(){
-       
+        $.get("http://192.168.1.107:81/qianxun/?s=index/partner/queryAllByPage&page=1&count=12",function(reslut){
+            vm.cooperation = reslut.data.data;
+        })
+        $.get("http://192.168.1.107:81/qianxun/?s=index/example/queryAllByPage&typeid=1&page=1&count=8",function(reslut){
+            console.log(reslut.data.data);
+            vm.arr = reslut.data.data;
+        })
     }
 })
 var swiper = new Swiper('.swiper-container', {

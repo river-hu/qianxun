@@ -555,3 +555,8 @@ nav li a:hover {
 .row {
     margin: 0;
 }
+a{
+    color: #666!important;
+    text-decoration: none;
+    
+}

@@ -118,49 +118,18 @@
         <h1 class="title_q">案例展示</h1>
         <p class="title_c">我们专注于为企业提供高端互联网解决方案</p>
         <div class="row">
-            <div class="list active">&nbsp;商城案例&nbsp;</div>
-            <div class="list">微商城案例</div>
-            <div class="list">&nbsp;软件开发&nbsp;</div>
-            <div class="list">&nbsp;APP案例&nbsp;</div>
+            <div class="list" :class="{active:pageindex==index+1}" v-for="(v,index) in title"  @click="toggle(index)">{{v.name}}</div>
+           
         </div>
         <div class="anli">
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
+            <div class="list" v-for="v in arr">
+                <a :href="v.url">
+                <img :src="v.image" >
+                </a>
+                <p>{{v.name}}</p>
+            
             </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-            <div class="list">
-                <img src="../image/网站建设.png" alt="">
-                <p>网站案例展示</p>
-            </div>
-
+           
         </div>
     </div>
 
@@ -221,33 +190,11 @@
             <a href="../index.html">河南千寻网络科技有限公司©</a> 版权所有 豫ICP备16000000000
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
 <script src="../js/jquery-3.1.0.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/swiper-3.4.2.jquery.min.js"></script>
-<script>
-    $('.nav p').click(function () {
-        $('.nav ul').stop().slideToggle(400)
-    })
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        autoplay: 5000,
-        loop: true
-    });
-</script>
+<script src="../js/vue.js"></script>
+<script src="../js/anli.js"></script>

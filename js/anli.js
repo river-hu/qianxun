@@ -1,15 +1,30 @@
-$.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=1",function(result){
+$('.nav p').click(function () {
+    $('.nav ul').stop().slideToggle(400)
+})
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    autoplay: 5000,
+    loop: true
+});
+
+$.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=6", function (result) {
     console.log(result.data);
     var html = "";
-    result.data.forEach(function(item){
-        html+="<div class=\"swiper-slide\" style=\"background-image:url("+item.image+")\"></div>";
+    result.data.forEach(function (item) {
+        html += "<div class=\"swiper-slide\" style=\"background-image:url(" + item.image + ")\"></div>";
     });
     $(".swiper-wrapper").html(html);
 })
-
 var vm = new Vue({
-    el:'.app',
-    data:{
+    el: ".intemet",
+    data: {
+        pageindex: 1,
         title: [
             {
                 name: " 商城案例 "
@@ -24,9 +39,7 @@ var vm = new Vue({
                 name: " APP案例 "
             },
         ],
-        pageindex: 1,
-        arr:[],
-        cooperation:[]
+        arr:[]
     },
     watch:{
         pageindex:function(){
@@ -37,24 +50,16 @@ var vm = new Vue({
             })
         }
     },
-    methods:{
-        case_toggle:function(index){
-            this.case_index = index;
-        },
+    methods: {
         toggle:function(index){
             this.pageindex = index+1;
         }
-    },  
-    mounted:function(){
-
     },
-    created:function(){
-        $.get("http://192.168.1.107:81/qianxun/?s=index/partner/queryAllByPage&page=1&count=12",function(reslut){
-            vm.cooperation = reslut.data.data;
-        })
+    created: function () {
         $.get("http://192.168.1.107:81/qianxun/?s=index/example/queryAllByPage&typeid=1&page=1&count=8",function(reslut){
             console.log(reslut.data.data);
             vm.arr = reslut.data.data;
         })
     }
 })
+

@@ -51,51 +51,46 @@
 
     </div>
     <div class="app" @click="over">
-            <div  class="t_nav" :class="{show:navshow}">
-                    <span  @click.stop="show">☰</span>
-                    <ul  >
-                        <li>
-                            <a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
-                        </li>
-                        <li>
-                            <a @click.stop="" href="./jianshe.html">网&nbsp;&nbsp;站&nbsp;&nbsp;建&nbsp;&nbsp;设&nbsp;&nbsp;部</a>
-                        </li>
-                        <li>
-                            <a href="./ruanjian.html">软件开发事业部</a>
-                        </li>
-                        <li>
-                            <a href="./pinpai.html">品牌包装设计部</a>
-                        </li>
-                        <li>
-                            <a href="./tuiguang.html">网&nbsp;&nbsp;络&nbsp;&nbsp;推&nbsp;&nbsp;广&nbsp;&nbsp;部</a>
-                        </li>
-                        <li>
-                            <a href="./anli.html">成&nbsp;&nbsp;&nbsp;&nbsp;功&nbsp;&nbsp;&nbsp;&nbsp;案&nbsp;&nbsp;&nbsp;&nbsp;例</a>
-                        </li>
-                        <li>
-                            <a href="./about.html">关&nbsp;&nbsp;&nbsp;&nbsp;于&nbsp;&nbsp;&nbsp;&nbsp;千&nbsp;&nbsp;&nbsp;&nbsp;寻</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="t_nav" :class="{show:navshow}">
+            <span @click.stop="show">☰</span>
+            <ul>
+                <li>
+                    <a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                </li>
+                <li>
+                    <a @click.stop="" href="./jianshe.html">网&nbsp;&nbsp;站&nbsp;&nbsp;建&nbsp;&nbsp;设&nbsp;&nbsp;部</a>
+                </li>
+                <li>
+                    <a href="./ruanjian.html">软件开发事业部</a>
+                </li>
+                <li>
+                    <a href="./pinpai.html">品牌包装设计部</a>
+                </li>
+                <li>
+                    <a href="./tuiguang.html">网&nbsp;&nbsp;络&nbsp;&nbsp;推&nbsp;&nbsp;广&nbsp;&nbsp;部</a>
+                </li>
+                <li>
+                    <a href="./anli.html">成&nbsp;&nbsp;&nbsp;&nbsp;功&nbsp;&nbsp;&nbsp;&nbsp;案&nbsp;&nbsp;&nbsp;&nbsp;例</a>
+                </li>
+                <li>
+                    <a href="./about.html">关&nbsp;&nbsp;&nbsp;&nbsp;于&nbsp;&nbsp;&nbsp;&nbsp;千&nbsp;&nbsp;&nbsp;&nbsp;寻</a>
+                </li>
+            </ul>
+        </div>
         <div class="container text-center intemet">
             <h1 class="title_q">案例展示</h1>
             <p class="title_c">我们专注于为企业提供高端互联网解决方案</p>
+            <div class="row">
+                <div class="list" :class="{active:pageindex==index+1}" v-for="(v,index) in title" @click="toggle(index)">{{v.name}}</div>
+
+            </div>
             <div class="anli">
-                <div class="list">
-                    <img src="../image/网站建设.png" alt="">
-                    <p>网站案例展示</p>
-                </div>
-                <div class="list">
-                    <img src="../image/网站建设.png" alt="">
-                    <p>网站案例展示</p>
-                </div>
-                <div class="list">
-                    <img src="../image/网站建设.png" alt="">
-                    <p>网站案例展示</p>
-                </div>
-                <div class="list">
-                    <img src="../image/网站建设.png" alt="">
-                    <p>网站案例展示</p>
+                <div class="list" v-for="v in arr">
+                    <a :href="v.url">
+                        <img :src="v.image">
+                    </a>
+                    <p>{{v.name}}</p>
+
                 </div>
 
             </div>
@@ -151,18 +146,3 @@
 <script src="../js/swiper-3.4.2.jquery.min.js"></script>
 <script src="./js/anli.js"></script>
 <script src="../js/my.js"></script>
-<script>
-    $('.nav p').click(function () {
-        $('.nav ul').stop().slideToggle(400)
-    })
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        autoplay: 5000,
-        loop: true
-    });
-</script>

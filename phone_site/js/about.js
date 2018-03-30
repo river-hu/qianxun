@@ -26,6 +26,14 @@ var omap = document.getElementById("map");
 if(omap.offsetWidth<800){
      omap.style.height=omap.offsetWidth*0.8+"px";
 }
+$.get("http://192.168.1.107:81/qianxun/?s=index/partner/queryAllByPage&page=1&count=8",function(reslut){
+    var html = "";
+    reslut.data.data.forEach(function(item){
+        html+="<img src='"+item.image+"'>";
+    });
+    $(".cooperation").html(html);
+
+})
 var vm = new Vue({
   el:'.app',
   data:{

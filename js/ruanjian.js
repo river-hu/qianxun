@@ -1,23 +1,3 @@
-var vm = new Vue({
-    el:'.app',
-    data:{
-        navshow:false
-    },
-    methods:{
-        show:function(){
-            if(!this.navshow){
-                this.navshow=true;
-            }
-           
-        },
-        over:function(){
-            this.navshow=false;
-        }
-    },
-    created:function(){
-
-    }
-})
 $('.nav p').click(function () {
     $('.nav ul').stop().slideToggle(400)
 })
@@ -61,13 +41,13 @@ function aa(v) {
     }
 }
 aa();
-$.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=3",function(result){
-console.log(result.data);
-var html = "";
-result.data.forEach(function(item){
-    html+="<div class=\"swiper-slide\" style=\"background-image:url("+item.image+")\"></div>";
-});
-$(".swiper-wrapper").html(html);
+$.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=3", function (result) {
+    console.log(result.data);
+    var html = "";
+    result.data.forEach(function (item) {
+        html += "<div class=\"swiper-slide\" style=\"background-image:url(" + item.image + ")\"></div>";
+    });
+    $(".swiper-wrapper").eq(0).html(html);
 })
 $.get("http://192.168.1.107:81/qianxun/?s=index/evaluation/queryAll", function (result) {
     console.log(result.data);
@@ -77,3 +57,4 @@ $.get("http://192.168.1.107:81/qianxun/?s=index/evaluation/queryAll", function (
     });
     $(".swiper-wrapper").eq(1).html(html);
 })
+
