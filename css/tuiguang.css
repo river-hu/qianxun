@@ -49,3 +49,16 @@ nav li:nth-child(5) {
        font-size: 20px;
        line-height: 20px;
    }
+
+   .listl{
+       text-align: left;
+       font-size: 18px;
+       line-height: 55px;
+   }
+   .frist{
+       font-size: 25px;
+       color: rgb(244, 124, 7);
+   }
+   .title{
+       
+   }

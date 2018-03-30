@@ -120,24 +120,40 @@
         <h1 class="title_q">千寻网络之网络推广部</h1>
         <p class="title_c">我们只看结果</p>
         <div class="row">
-            <div class="list active">网站程序维护</div>
+            <div class="list">网站程序维护</div>
             <div class="list">网站内容维护</div>
             <div class="list">客户端维护&nbsp;</div>
             <div class="list">网络推广&nbsp;&nbsp;</div>
         </div>
         <div class="row">
             <div class="col-sm-6 hidden-xs">
-                <img src="../image/1.png" alt="img" style="width: 100%;">
+                <img src="../image/tuiguang0.png" alt="img" style="width: 100%;">
             </div>
             <div class="col-sm-6 col-xs-12">
-                文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
-                文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+                <div class="listl frist">
+                    目的：保障网站程序健康正常运行
+                </div>
+                <div class="listl">
+                    网站程序、数据库定期检查、维护、备份
+                </div>
+                <div class="listl">
+                    网站程序、数据库问题及时排除、解决
+                </div>
+                <div class="listl">
+                    网站程序托管
+                </div>
+                <div class="listl">
+                    网站技术支持与维护
+                </div>
+                <div class="listl">
+                网站域名、空间到期提前提醒
+                </div>
             </div>
 
         </div>
         <div class="row">
             <div class="col-md-6 col-xs-12">
-                <h1>标题标题</h1>
+                <h1 class="title">标题标题</h1>
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字 文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
                     文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
                 </p>
@@ -235,12 +251,12 @@
         autoplay: 5000,
         loop: true
     });
-    $.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=5",function(result){
-    console.log(result.data);
-    var html = "";
-    result.data.forEach(function(item){
-        html+="<div class=\"swiper-slide\" style=\"background-image:url("+item.image+")\"></div>";
-    });
-    $(".swiper-wrapper").html(html);
-})
+    $.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=5", function (result) {
+        console.log(result.data);
+        var html = "";
+        result.data.forEach(function (item) {
+            html += "<div class=\"swiper-slide\" style=\"background-image:url(" + item.image + ")\"></div>";
+        });
+        $(".swiper-wrapper").html(html);
+    })
 </script>
