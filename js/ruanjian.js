@@ -41,15 +41,16 @@ function aa(v) {
     }
 }
 aa();
-$.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=3", function (result) {
+$.get("http://122.114.73.208/qianxun/?s=index/banner/queryAll&typeid=3", function (result) {
     console.log(result.data);
     var html = "";
     result.data.forEach(function (item) {
+        item.image=item.image.replace("\\","\\\\");
         html += "<div class=\"swiper-slide\" style=\"background-image:url(" + item.image + ")\"></div>";
     });
     $(".swiper-wrapper").eq(0).html(html);
 })
-$.get("http://192.168.1.107:81/qianxun/?s=index/evaluation/queryAll", function (result) {
+$.get("http://122.114.73.208/qianxun/?s=index/evaluation/queryAll", function (result) {
     console.log(result.data);
     var html = "";
     result.data.forEach(function (item) {

@@ -1,10 +1,12 @@
-$.get("http://192.168.1.107:81/qianxun/?s=index/banner/queryAll&typeid=1",function(result){
+$.get("http://122.114.73.208/qianxun/?s=index/banner/queryAll&typeid=1",function(result){
     console.log(result.data);
     var html = "";
     result.data.forEach(function(item){
-        html+="<div class=\"swiper-slide\" style=\"background-image:url("+item.image+")\"></div>";
+        item.image=item.image.replace("\\","\\\\");
+        html+="<div class='swiper-slide' style='background-image:url("+item.image+")'></div>";
     });
     $(".swiper-wrapper").html(html);
+
 })
 
 var vm = new Vue({
@@ -43,14 +45,14 @@ var vm = new Vue({
     },
     watch:{
         pageindex:function(){
-            var url = "http://192.168.1.107:81/qianxun/?s=index/example/queryAllByPage&typeid="+this.pageindex+"&page=1&count=8"
+            var url = "http://122.114.73.208/qianxun/?s=index/example/queryAllByPage&typeid="+this.pageindex+"&page=1&count=8"
             $.get(url,function(reslut){
                 console.log(reslut);
                 vm.arr = reslut.data.data;
             })
         },
         newindex:function(){
-            var url = "http://192.168.1.107:81/qianxun/?s=index/information/queryAllByPage&page=1&count=8&type_id="+this.newindex;
+            var url = "http://122.114.73.208/qianxun/?s=index/information/queryAllByPage&page=1&count=8&type_id="+this.newindex;
             $.get(url,function(reslut){
                 console.log(reslut);
                 vm.newarr = reslut.data.data;
@@ -72,14 +74,14 @@ var vm = new Vue({
 
     },
     created:function(){
-        $.get("http://192.168.1.107:81/qianxun/?s=index/partner/queryAllByPage&page=1&count=12",function(reslut){
+        $.get("http://122.114.73.208/qianxun/?s=index/partner/queryAllByPage&page=1&count=12",function(reslut){
             vm.cooperation = reslut.data.data;
         })
-        $.get("http://192.168.1.107:81/qianxun/?s=index/example/queryAllByPage&typeid=1&page=1&count=8",function(reslut){
+        $.get("http://122.114.73.208/qianxun/?s=index/example/queryAllByPage&typeid=1&page=1&count=8",function(reslut){
             console.log(reslut.data.data);
             vm.arr = reslut.data.data;
         })
-        $.get("http://192.168.1.107:81/qianxun/?s=index/information/queryAllByPage&page=1&count=8&type_id=1",function(reslut){
+        $.get("http://122.114.73.208/qianxun/?s=index/information/queryAllByPage&page=1&count=8&type_id=1",function(reslut){
             console.log(reslut.data.data);
             vm.newarr = reslut.data.data;
         })
