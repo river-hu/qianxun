@@ -1,9 +1,6 @@
 nav li:nth-child(3) {
-    background-color: #f57c07;
-    color: #fff!important;
-}
-nav li:nth-child(3) a{
-    color: #fff!important;
+    border-bottom: 2px solid #f57c07;
+    
 }
 
 #s0 .swiper-container {

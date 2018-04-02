@@ -1,10 +1,8 @@
 nav li:nth-child(7) {
-    background-color: #f57c07;
-    color: #fff!important;
+    border-bottom: 2px solid #f57c07;
+    
 }
-nav li:nth-child(7) a{
-    color: #fff!important;
-}
+
 .fuwu h1{
     margin-top: 50px;
 font-size: 30px;

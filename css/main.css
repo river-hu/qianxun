@@ -1,9 +1,6 @@
 nav li:nth-child(1) {
-    background-color: #f57c07;
-    color: #fff!important;
-}
-nav li:nth-child(1) a{
-    color: #fff!important;
+    border-bottom: 2px solid #f57c07;
+    
 }
 .intemet{
     margin-top: 40px;

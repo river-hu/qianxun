@@ -50,7 +50,7 @@ nav img {
 }
 nav li:hover {
     background-color: #eee;
-    border-bottom:2px solid red;
+    border-bottom:2px solid #f57c07;
 }
 .nav li {
     width: 100%;
