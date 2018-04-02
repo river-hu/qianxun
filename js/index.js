@@ -26,7 +26,20 @@ var vm = new Vue({
         ],
         pageindex: 1,
         arr:[],
-        cooperation:[]
+        cooperation:[],
+        newindex:1,
+        newtitle: [
+            {
+                name: "运营技巧"
+            },
+            {
+                name: "建站知识"
+            },
+            {
+                name: "新闻资讯"
+            }
+        ],
+        newarr:[]
     },
     watch:{
         pageindex:function(){
@@ -34,6 +47,13 @@ var vm = new Vue({
             $.get(url,function(reslut){
                 console.log(reslut);
                 vm.arr = reslut.data.data;
+            })
+        },
+        newindex:function(){
+            var url = "http://192.168.1.107:81/qianxun/?s=index/information/queryAllByPage&page=1&count=8&type_id="+this.newindex;
+            $.get(url,function(reslut){
+                console.log(reslut);
+                vm.newarr = reslut.data.data;
             })
         }
     },
@@ -43,6 +63,9 @@ var vm = new Vue({
         },
         toggle:function(index){
             this.pageindex = index+1;
+        },
+        newtoggle:function(index){
+            this.newindex = index+1;
         }
     },  
     mounted:function(){
@@ -56,5 +79,10 @@ var vm = new Vue({
             console.log(reslut.data.data);
             vm.arr = reslut.data.data;
         })
+        $.get("http://192.168.1.107:81/qianxun/?s=index/information/queryAllByPage&page=1&count=8&type_id=1",function(reslut){
+            console.log(reslut.data.data);
+            vm.newarr = reslut.data.data;
+        })
+
     }
 })

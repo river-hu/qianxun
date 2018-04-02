@@ -59,7 +59,7 @@ nav li:hover {
     font-size: 16px;
     border-bottom: 1px solid rgb(170, 170, 170);
     text-align: center;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
 }
 .banner{
     color: #fff;
@@ -166,6 +166,7 @@ nav li:hover {
     border-radius: 5px;
     font-size: 18px;
     margin-bottom: 2vw;
+    transition: all .3s;
 }
 .con7 .yuan{
     background-color: #f57e07;
@@ -275,7 +276,13 @@ nav li a:hover{
     margin: 10px;
     flex-grow: 0;
 }
+h3{
+    font-size: 18px;
+}
 @media (min-width: 768px) {
+    h3{
+        font-size: 24px;
+    }
     nav img {
         height: 50px;
         padding: 5px;
@@ -331,6 +338,9 @@ nav li a:hover{
 }
 
 @media (min-width: 992px) {
+    h3{
+        font-size: 24px;
+    }
     #s0 .swiper-container {
         height: 500px;
     }
@@ -397,6 +407,9 @@ nav li a:hover{
 }
 
 @media (min-width: 1200px) {
+    h3{
+        font-size: 24px;
+    }
     .foot2{
         width: 100%;
         background: #1b1b1b;
@@ -449,8 +462,8 @@ nav li a:hover{
     }
 }
 .intemet .head .active,.active{
-    background-color: #f57c07;
-    color: #fff;
+    background-color: #f57c07!important;
+    color: #fff!important;
 }
 /* a{
     color: #666!important;

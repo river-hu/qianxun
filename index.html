@@ -306,119 +306,30 @@
                 <h3>技艺是无价之宝，知识是智慧的明灯，想法是比知识更好的朋友</h3>
             </div>
             <div class="row con3_2" style="padding: 0 20%">
-                <div class="col-sm-4 col-xs-12">
-                    <p>运营技巧 </p>
+                <div class="col-sm-4 col-xs-12" v-for="(v,index) in newtitle">
+                    <p :class="{active:newindex==index+1}" @click="newtoggle(index)">{{v.name}} </p>
                 </div>
-                <div class="col-sm-4 col-xs-12">
-                    <p>建站知识</p>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <p>新闻资讯</p>
-                </div>
+               
             </div>
             <div class="row">
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-xs-12" v-for="(v,index) in newarr">
                     <div class="col-xs-3">
                         <p class="yuan">
-                            <span class="y1">11</span>
+                            <span class="y1">{{v.date|day}}</span>
                             <br>
-                            <span class="y2">2016/12</span>
+                            <span class="y2">{{v.date|year}}/{{v.date|month}}</span>
                         </p>
                     </div>
                     <div class="col-xs-9 text-left">
-                        <h2>网站建设</h2>
+                        <h2>{{v.title}}</h2>
                         <p>
-                            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+                            {{v.text}}
                             <a class="mroe"
-                                style="color:#f57c07;" href="./template/dec.html">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
+                                style="color:#f57c07;" :href="'http://192.168.1.107:81/qianxun/?s=index/information/contentView&id='+v.id">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-xs-3">
-                        <p class="yuan">
-                            <span class="y1">11</span>
-                            <br>
-                            <span class="y2">2016/12</span>
-                        </p>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <h2>网站建设</h2>
-                        <p>
-                            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
-                            <a class="mroe" style="color:#f57c07;"
-                                href="./template/dec.html">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-xs-3">
-                        <p class="yuan">
-                            <span class="y1">11</span>
-                            <br>
-                            <span class="y2">2016/12</span>
-                        </p>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <h2>网站建设</h2>
-                        <p>
-                            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
-                            <a class="mroe" style="color:#f57c07;"
-                                href="./template/dec.html">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-xs-3">
-                        <p class="yuan">
-                            <span class="y1">11</span>
-                            <br>
-                            <span class="y2">2016/12</span>
-                        </p>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <h2>网站建设</h2>
-                        <p>
-                            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
-                            <a class="mroe" style="color:#f57c07;"
-                                href="./template/dec.html">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-xs-3">
-                        <p class="yuan">
-                            <span class="y1">11</span>
-                            <br>
-                            <span class="y2">2016/12</span>
-                        </p>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <h2>网站建设</h2>
-                        <p>
-                            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
-                            <a class="mroe" style="color:#f57c07;"
-                                href="./template/dec.html">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-xs-3">
-                        <p class="yuan">
-                            <span class="y1">11</span>
-                            <br>
-                            <span class="y2">2016/12</span>
-                        </p>
-                    </div>
-                    <div class="col-xs-9 text-left">
-                        <h2>网站建设</h2>
-                        <p>
-                            文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
-                            <a class="mroe" style="color:#f57c07;"
-                                href="./template/dec.html">&nbsp;&nbsp;&nbsp;&nbsp; >></a>
-                        </p>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </div>
@@ -472,6 +383,7 @@
 <script src="./js/jquery-3.1.0.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/swiper-3.4.2.jquery.min.js"></script>
+<script src="./js/vue.time.js"></script>
 <script src="./js/index.js"></script>
 <script>
     $('.nav p').click(function () {

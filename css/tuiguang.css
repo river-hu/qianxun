@@ -59,6 +59,35 @@ nav li:nth-child(5) {
        font-size: 25px;
        color: rgb(244, 124, 7);
    }
-   .title{
-       
+   .sction{
+       padding: 0 50px;
+       box-sizing: border-box;
    }
+  .sction .title{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      background: #666;
+      color: #fff;
+      font-size: 20px;
+      margin: 0 auto 20px;
+  }
+  .sction .s_list{
+      text-align: left;
+      line-height: 30px ;
+  }
+  .sction .s_list span{
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #666;
+      vertical-align: middle;
+      margin-left: 15px;
+      margin-right: 10px;
+  }
+  .origin .title{
+      background:rgb(244, 124, 7); 
+  }
+  .origin .s_list span{
+    background:rgb(244, 124, 7); 
+  }
