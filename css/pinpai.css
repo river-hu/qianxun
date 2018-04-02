@@ -1,17 +1,16 @@
+nav li:nth-child(4) {
+    background-color: #f57c07;
+    color: #fff!important;
+}
+nav li:nth-child(4) a{
+    color: #fff!important;
+}
 
-        nav li:nth-child(4) {
-            background-color: #eee;
-            border-bottom:2px solid red;
-        }
         .tel img,.tel div{
          display: inline-block;
         
         }
-        .
-        tel_img{
-            width: 100px;
-            height: 100px;
-        }
+    
         .tel>div{
             font-size: 30px;
             line-height: 50px;

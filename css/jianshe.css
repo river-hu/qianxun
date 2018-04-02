@@ -1,6 +1,9 @@
 nav li:nth-child(2) {
-    background-color: #eee;
-    border-bottom: 2px solid red;
+    background-color: #f57c07;
+    color: #fff!important;
+}
+nav li:nth-child(2) a{
+    color: #fff!important;
 }
 
 .con2{
